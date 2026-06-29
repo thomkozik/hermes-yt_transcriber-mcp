@@ -3,7 +3,7 @@
 A Hermes-ready MCP server for **STT-first** YouTube transcript ingestion.
 It downloads audio with `yt-dlp`, normalizes it with `ffmpeg`, transcribes it
 with `faster-whisper`, and saves durable Markdown + JSON outputs suitable for
-Obsidian and Thorn ingestion.
+Obsidian and Hermes ingestion.
 
 ## Exposed tools
 
