@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hermes-youtube-transcript-mcp"
+version = "0.1.0"
+description = "Hermes MCP server for STT-first YouTube transcript ingestion"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "mcp>=1.0.0",
+  "faster-whisper>=1.0.0",
+  "yt-dlp>=2024.1.0",
+]
+
+[project.scripts]
+hermes-youtube-transcript-mcp = "hermes_youtube_transcript_mcp.server:main"
+
+[tool.setuptools]
+packages = ["hermes_youtube_transcript_mcp"]
